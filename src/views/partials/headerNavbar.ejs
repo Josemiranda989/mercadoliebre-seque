@@ -1,0 +1,55 @@
+<header class="main-header">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-5 col-md-2">
+				<a href="/" class="main-header_home-link">
+					<img src="/images/logo-mercado-liebre.svg">
+				</a>
+			</div>
+
+			<div class="col-7 col-md-6">
+				<form action="/search" method="GET" class="search-form">
+					<input type="text" name="keywords" placeholder="Buscar productos, marcas y más" class="search-form_input">
+					<button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+
+			<div class="col-12 col-md-4">
+				<a href="#" class="main-header_credit-link">
+					<i class="fas fa-hand-holding-usd"></i>
+					Comprá en cuotas y sin tarjeta de crédito
+				</a>
+			</div>
+		</div>
+
+		<button class="btn-toggle-navbar">
+			<i class="fas fa-bars"></i>
+		</button>
+
+		<nav class="main-navbar">
+			<ul class="left-navbar">
+				<li><a href="/products">Todos los productos</a></li>
+				<li><a href="#">Ofertas</a></li>
+				<li><a href="#">Tiendas Oficiales</a></li>
+				<li><a href="/products/create">Vender</a></li>
+				<li><a href="#">Ayuda</a></li>
+			</ul>
+
+			<ul class="right-navbar">
+				<% if (!user) { %>
+				<li><a href="/users/login">login<i class="fas fa-sign-in-alt"></i></a></li>
+				<li><a href="/users/register">Registrarme <i class="far fa-address-card"></i></a></li>
+				<% } %>
+
+				<li>
+					<form action="/users/logout" method="POST" class="form is-inline">
+						<a class="menu-logout" onclick="this.closest('form').submit();return false;"><i class="fas fa-sign-out-alt"></i></a>
+					</form>
+				</li>
+				<% if (user) { %>
+				<li><a class="menu-profile" href="/users/profile">Perfil<i></i></a></li>
+					<% } %>
+			</ul>
+		</nav>
+	</div>
+</header>

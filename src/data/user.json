@@ -1,0 +1,83 @@
+[
+ {
+  "id": 3,
+  "firstName": "Andres",
+  "lastName": "Murgo",
+  "email": "andresmurgoasd3q3wrfg13@gmail.com",
+  "password": "$2a$10$9xsKjW5vMrhH2pw9xbT9cuK2ly/Yy.Qc.KfYfm8362ApAg/GYgHAm",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 4,
+  "firstName": "Andres",
+  "lastName": "Murgo",
+  "email": "andresmurgo@gmail.com",
+  "password": "$2a$10$dks4ReYtnKkKOnlVIBWbG.gOf0JX22FTFySYuY5xVxqHIVBZcZZ3y",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 5,
+  "firstName": "karen",
+  "lastName": "gimenez",
+  "email": "karen@kren.com",
+  "password": "$2a$10$yI9OXsT4Epaz5lL84.rQ.uSWII/10MUguwtg8KpWUtwHS.nWfJLiq",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 6,
+  "firstName": "an",
+  "lastName": "an",
+  "email": "a@a",
+  "password": "$2a$10$wNjjzVlZN8JqigqSV91NQex.Qlyz2QNwP5nApJ8wwpZRJeMhwRV/W",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 7,
+  "firstName": "test",
+  "lastName": "test",
+  "email": "test@test.com",
+  "password": "$2a$10$vRYmA3R73uz3OEpUGZPMB.C6drgzs9XWzRtuzwfUQcq9iv8uv3rOC",
+  "image": "image-1645299887599.png",
+  "category": "user"
+ },
+ {
+  "id": 8,
+  "firstName": "an",
+  "lastName": "an",
+  "email": "cedavilu@gmail.com",
+  "password": "$2a$10$4XK2GSIn80rdyNFcMi6.Mu35lwbBxwVNmXY62caXFfJ0zrGkaSttG",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 9,
+  "firstName": "123",
+  "lastName": "123",
+  "email": "123",
+  "password": "$2a$10$52BdWnVhfoBP7v3DlXM.OOGVGJMl/6VQ0S.9WTRl2GjQZzhgnYo3.",
+  "image": "default-image.png",
+  "category": "user"
+ },
+ {
+  "id": 10,
+  "firstName": "Andres",
+  "lastName": "Murgo",
+  "email": "andresmurgo32@gmail.com",
+  "password": "$2a$10$IjOTJ.zhyQwED/XRkFq3jOqzrgj3UB1B3tyxqZfO9NBBJgom2pxFK",
+  "image": "image-1645543433811.png",
+  "category": "user"
+ },
+ {
+  "id": 11,
+  "firstName": "Andres",
+  "lastName": "Murgo",
+  "email": "andresmurgo32@gmail.com",
+  "password": "$2a$10$Ecmp95OXteJ2itWSNJdSrulUbqO7X4gq0i9uuKiBqzYuwC5rXo1Su",
+  "image": "image-1645575925567.png",
+  "category": "user"
+ }
+]

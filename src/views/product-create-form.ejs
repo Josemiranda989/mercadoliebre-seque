@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Include Head -->
+<%- include('partials/head', {title: 'Formulario de creación'}) %>
+<body>
+	<!-- Header -->
+	<%- include('partials/headerNavbar') %>
+	<!-- /Header -->
+
+	<div class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Formulario de creación de productos</h2>
+			</div>
+		</div>
+		<div class="col-12">
+			<form action="/products" method="POST" enctype="multipart/form-data">
+				<div class="row product-detail">
+					<div class="col-12 col-md-6">
+						<label for="name" class="form-label">Nombre del producto:</label>
+						<input type="text" id="name" name="name" placeholder="Ej: Zapatillas Reebok" class="form-input" value="<%= locals.old && old.name %>">
+						<% if (typeof errors != 'undefined' && typeof errors.name != 'undefined') { %>
+							<span style="color: red"><%= errors.name.msg %></span> 
+						<% } %>
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="price" class="form-label">Precio del producto:</label>
+						<input type="text" id="price" name="price" placeholder="Ej: 5678" class="form-input" value="<%= locals.old && old.price %>">
+						<% if (typeof errors != 'undefined' && typeof errors.price != 'undefined') { %>
+							<span style="color: red"><%= errors.price.msg %></span>
+						<% } %>
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="discount" class="form-label">Descuento:</label>
+						<input type="number" id="discount" name="discount" placeholder="Ej: 15" class="form-input" value="<%= locals.old && old.discount %>">
+						<% if (typeof errors != 'undefined' && typeof errors.discount != 'undefined') { %>
+							<span style="color: red"><%= errors.discount.msg %></span>
+						<% } %>
+					</div>
+					<div class="col-12 col-md-6">
+						<label for="category" class="form-label">Categoría:</label>
+						<select name="category" id="category" class="form-input">
+
+							<option value="">Elegí</option>
+							<% categories.forEach(oneCategory => { %>
+								<option value="<%= oneCategory.id %>"> <%= oneCategory.name %> </option>
+								<% }) %>
+
+						</select>
+						<% if (typeof errors != 'undefined' && typeof errors.category != 'undefined') { %>
+							<span style="color: red"><%= errors.category.msg %></span>
+						<% } %>
+					</div>
+					<div class="col-12">
+						<label for="description" class="form-label">Descipción:</label>
+						<% if (typeof errors != 'undefined' && typeof errors.description != 'undefined') { %>
+							<span style="color: red"><%= errors.description.msg %></span>
+						<% } %>
+						<textarea name="description" id="description" class="form-input"></textarea>
+					</div>
+					<div class="col-12">
+						<label for="image" class="form-label">Imagen:</label>
+						<input type="file" name="image" id="image" class="form-input">
+					</div>
+					<div class="col-12">
+						<button type="submit" class="buy-now-button">Guardar producto</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
